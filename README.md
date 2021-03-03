@@ -1,1 +1,1 @@
-A [sample website](https://BenCreating/github.io/sample_website/) built while following *Learn Enough HTML to be Dangerous.*
+A [sample website](https://BenCreating.github.io/sample_website/) built while following *Learn Enough HTML to be Dangerous.*
