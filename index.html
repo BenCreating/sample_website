@@ -6,9 +6,9 @@
   </head>
   <body>
     <h1>A* search algorithm</h1>
-    <p>A* (pronounced "A-star") is a graph traversal and path search algorithm, which is often used in many fields of computer science due to its completeness, optimality, and optimal efficiency.</p>
+    <p><strong>A*</strong> (pronounced "A-star") is a graph traversal and path search algorithm, which is often used in many fields of computer science due to its completeness, optimality, and optimal efficiency.</p>
 
-    <p>Peter Hart, Nils Nilsson and Bertram Raphael of Stanford Research Institute (now SRI International) first published the algorithm in 1968. It can be seen as an extension of Dijkstra's algorithm. A* achieves better performance by using heuristics to guide its search.</p>
+    <p>Peter Hart, Nils Nilsson and Bertram Raphael of </em>Stanford Research Institute</em> (now <em>SRI International</em>) first published the algorithm in 1968. It can be seen as an extension of <em><strong>Dijkstra's algorithm.</strong></em> A* achieves better performance by using heuristics to guide its search.</p>
 
     <h2>History</h2>
     <p>A* was created as part of the Shakey project, which had the aim of building a mobile robot that could plan its own actions. Nils Nilsson originally proposed using the Graph Traverser algorithm for Shakey's path planning. Graph Traverser is guided by a heuristic function h(n), the estimated distance from node n to the goal node: it entirely ignores g(n), the distance from the start node to n. Bertram Raphael suggested using the sum, g(n) + h(n). Peter Hart invented the concepts we now call admissibility and consistency of heuristic functions. A* was originally designed for finding least-cost paths when the cost of a path is the sum of its costs, but it has been shown that A* can be used to find optimal paths for any problem satisfying the conditions of a cost algebra.</p>
