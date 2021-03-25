@@ -1,0 +1,78 @@
+/* Navigation links */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  padding: 0 16px;
+}
+
+nav a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* Content */
+.content {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  margin: 0 0 80px;
+}
+
+header h2 {
+  text-align: center;
+}
+
+.image-left {
+  float: left;
+  margin: 0 40px 20px 0;
+}
+
+.image-block {
+  display: block;
+  margin: 0 auto;
+}
+
+blockquote {
+  padding: 2px 20px;
+  background-color: #e3ede1;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.quote-callout {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #ad1209
+}
+
+.book-review {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #fafafa;
+  border: solid 1px #ebebeb;
+}
+
+.book-review blockquote {
+  background-color: transparent;
+}
+
+td {
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #ebebeb;
+}

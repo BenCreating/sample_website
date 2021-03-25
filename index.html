@@ -3,19 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>A* Search Algorithm</title>
+
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
-    <nav>
-      <ul style="list-style: none; display: flex; justify-content: flex-end;">
-        <li style="padding: 0 16px;"><a href="index.html" style="color: blue; text-decoration: none;">Home</a></li>
-        <li style="padding: 0 16px;"><a href="tags.html" style="color: blue; text-decoration: none;">Tags</a></li>
-        <li style="padding: 0 16px;"><a href="moby_dick.html" style="color: blue; text-decoration: none;">Moby Dick</a></li>
+    <nav id="main-nav" class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tags.html">Tags</a></li>
+        <li><a href="moby_dick.html">Moby Dick</a></li>
       </ul>
     </nav>
 
-    <div style="max-width: 1200px; margin: 20px auto; padding: 30px;">
-      <h1 style="text-align: center;">A* search algorithm</h1>
+    <div class="content">
+      <h1>A* search algorithm</h1>
 
       <p>
         <strong>A*</strong> (pronounced "A-star") is a graph traversal and path search algorithm, which is often used in many fields of computer science due to its completeness, optimality, and optimal efficiency.
@@ -26,8 +28,7 @@
       </p>
 
       <a href="https://commons.wikimedia.org/wiki/File:SRI_Shakey_with_callouts.jpg" target="_blank" rel="noopener">
-        <img src="images/SRI_Shakey_with_callouts.jpg" alt="Shakey the robot" height="500"
-        style="float: left; margin: 0 40px 20px 0;">
+        <img src="images/SRI_Shakey_with_callouts.jpg" alt="Shakey the robot" height="500" class="image-left">
       </a>
 
       <h2>History</h2>
@@ -58,13 +59,13 @@
         When a path is required at the end of the search, it is common to keep with each node a reference to that node's parent. At the end of the search these references can be used to recover the optimal path. If these references are being kept then it can be important that the same node doesn't appear in the priority queue more than once (each entry corresponding to a different path to the node, and each with a different cost). A standard approach here is to check if a node about to be added already appears in the priority queue. If it does, then the priority and parent pointers are changed to correspond to the lower cost path. A standard binary heap based priority queue does not directly support the operation of searching for one of its elements, but it can be augmented with a hash table that maps elements to their position in the heap, allowing this decrease-priority operation to be performed in logarithmic time. Alternatively, a Fibonacci heap can perform the same decrease-priority operations in constant amortized time.
       </p>
 
-      <blockquote style="padding: 2px 20px; background-color: #e3ede1;">
+      <blockquote>
         <p>
           <em>Don't believe every quote you read on the Internet.</em>
           <br>
           —Abraham Lincoln
         </p>
-      <blockquote>
+      </blockquote>
     </div>
   </body>
 </html>
