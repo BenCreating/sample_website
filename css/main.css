@@ -21,15 +21,20 @@ nav a {
   padding: 30px;
 }
 
-h1 {
-  text-align: center;
-}
-
 header {
   margin: 0 0 80px;
 }
 
+h1 {
+  text-align: center;
+}
+
 header h2 {
+  text-align: center;
+}
+
+.attribution {
+  font-size: 12px;
   text-align: center;
 }
 
@@ -57,6 +62,11 @@ blockquote {
   color: #ad1209
 }
 
+.quote-author {
+  font-style: normal;
+  text-align: right;
+}
+
 .book-review {
   max-width: 700px;
   margin: 20px auto;
@@ -67,6 +77,11 @@ blockquote {
 
 .book-review blockquote {
   background-color: transparent;
+}
+
+/* Tables */
+table {
+  width: 100%;
 }
 
 td {

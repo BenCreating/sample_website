@@ -17,7 +17,8 @@
     </nav>
 
     <div class="content">
-      <h1>A* search algorithm</h1>
+      <h1 id="a-star-search">A* search algorithm</h1>
+      <p class="attribution">text from <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank" rel="noopener">Wikipedia</a></p>
 
       <p>
         <strong>A*</strong> (pronounced "A-star") is a graph traversal and path search algorithm, which is often used in many fields of computer science due to its completeness, optimality, and optimal efficiency.
@@ -31,7 +32,7 @@
         <img src="images/SRI_Shakey_with_callouts.jpg" alt="Shakey the robot" height="500" class="image-left">
       </a>
 
-      <h2>History</h2>
+      <h2 id="history">History</h2>
 
       <p>
         A* was created as part of the Shakey project, which had the aim of building a mobile robot that could plan its own actions. Nils Nilsson originally proposed using the Graph Traverser algorithm for Shakey's path planning. Graph Traverser is guided by a heuristic function h(n), the estimated distance from node n to the goal node: it entirely ignores g(n), the distance from the start node to n. Bertram Raphael suggested using the sum, g(n) + h(n). Peter Hart invented the concepts we now call admissibility and consistency of heuristic functions. A* was originally designed for finding least-cost paths when the cost of a path is the sum of its costs, but it has been shown that A* can be used to find optimal paths for any problem satisfying the conditions of a cost algebra.
@@ -41,7 +42,7 @@
         The original 1968 A* paper contained a theorem stating that no A*-like algorithm could expand fewer nodes than A* if the heuristic function is consistent and A*’s tie-breaking rule is suitably chosen. A ″correction″ was published a few years later claiming that consistency was not required, but this was shown to be false in Dechter and Pearl's definitive study of A*'s optimality (now called optimal efficiency), which gave an example of A* with a heuristic that was admissible but not consistent expanding arbitrarily more nodes than an alternative A*-like algorithm.
       </p>
 
-      <h2>Description</h2>
+      <h2 id="description">Description</h2>
       <p>
         A* is an informed search algorithm, or a best-first search, meaning that it is formulated in terms of weighted graphs: starting from a specific starting node of a graph, it aims to find a path to the given goal node having the smallest cost (least distance travelled, shortest time, etc.). It does this by maintaining a tree of paths originating at the start node and extending those paths one edge at a time until its termination criterion is satisfied.
       </p>
@@ -50,7 +51,7 @@
         At each iteration of its main loop, A* needs to determine which of its paths to extend. It does so based on the cost of the path and an estimate of the cost required to extend the path all the way to the goal.
       </p>
 
-      <h3>Implementation details</h3>
+      <h3 id="implementation">Implementation details</h3>
       <p>
         There are a number of simple optimizations or implementation details that can significantly affect the performance of an A* implementation. The first detail to note is that the way the priority queue handles ties can have a significant effect on performance in some situations. If ties are broken so the queue behaves in a LIFO manner, A* will behave like depth-first search among equal cost paths (avoiding exploring more than one equally optimal solution).
       </p>
@@ -60,11 +61,8 @@
       </p>
 
       <blockquote>
-        <p>
-          <em>Don't believe every quote you read on the Internet.</em>
-          <br>
-          —Abraham Lincoln
-        </p>
+        <p>Don't believe every quote you read on the Internet.</p>
+        <p class="quote-author">—Abraham Lincoln</p>
       </blockquote>
     </div>
   </body>
